@@ -1,7 +1,7 @@
 library(quantmod)
 library(TTR)
 
-symbols <- readLines("Portfolio.txt")
+symbols <- readLines("portfolio.txt")
 
 load_stock_data <- function(symbol) {
   getSymbols(symbol, src = "yahoo",
